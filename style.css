@@ -521,8 +521,8 @@ a.active {
     /* Mengatur jarak antara elemen di dalam grid */
   }
 
-  .counter {
-    font-size: 1rem;
+  .trinity .counter {
+    font-size: 10px;
   }
 
   /* Mengatur BIRTH DAY untuk mengambil dua kolom */
