@@ -463,7 +463,7 @@ a.active {
   /* Services Section */
   .services-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(30vw, 1fr));
+    grid-template-columns: repeat(1, minmax(30vw, 1fr));
     gap: 2rem;
   }
 
