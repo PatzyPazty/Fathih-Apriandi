@@ -1,5 +1,5 @@
 const mengetik = new Typed(".typing", {
-  strings: ["Frontend Developer", "Web Developer", "Graphic Designer"],
+  strings: ["Frontend Developer", "Backend Developer", "Fullstack Developer", "Web Developer", "Graphic Designer"],
   typeSpeed: 125,
   backSpeed: 100,
   loop: true,
