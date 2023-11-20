@@ -76,7 +76,7 @@ function startCountersAnimation() {
   counters.forEach(counter => {
     const targetCount = +counter.textContent;
     let count = 0;
-    const increment = targetCount / 70;
+    const increment = targetCount / 1000;
 
     function updateCount() {
       count += increment;
