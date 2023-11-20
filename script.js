@@ -6,7 +6,6 @@ const mengetik = new Typed(".typing", {
 });
 
 let navbar = document.querySelector(".navbar");
-
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
 
@@ -35,8 +34,8 @@ ScrollReveal({
   delay: 200,
 });
 
-ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
-ScrollReveal().reveal(".home-img", { origin: "bottom" });
+ScrollReveal().reveal(".home-content, .about-content, .services-content, .portfolio-content, .services-list, .portfolio-list, .heading", { origin: "top" });
+ScrollReveal().reveal(".home-img, .about-img", { origin: "bottom" });
 
 document.getElementById('HBtn').addEventListener('click', function () {
   swal({
