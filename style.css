@@ -302,12 +302,12 @@ a.active {
 }
 
 .portfolio-list div i {
-  margin-top: 1px;
+  margin-top: 0;
   margin-bottom: 1px;
   border: 2px solid var(--main-color);
   border-radius: 50%;
   color: var(--button-color);
-  padding: 5px;
+  padding: 3px;
   font-size: 20px;
   color: var(--main-color);
   transition: 0.5s all ease;
@@ -505,7 +505,7 @@ a.active {
 
   .portfolio-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
   }
 
