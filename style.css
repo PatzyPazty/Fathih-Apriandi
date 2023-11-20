@@ -366,7 +366,7 @@ a.active {
 }
 
 /* Add a media query for screens with a maximum width of 768px (typical for smartphones in portrait mode) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
   body {
     font-size: 16px;
     /* Mengatur ukuran font dasar untuk lebih mudah dibaca di layar yang lebih kecil */
@@ -552,7 +552,243 @@ a.active {
   .dropdown {
     display: flex;
   }
-  
+
+  .dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 0;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 30px;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 2rem var(--main-color);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.4s all ease;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    color: var(--main-color);
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: transparent;
+  }
+}
+
+/* Add a media query for screens with a maximum width of 768px (typical for smartphones in portrait mode) */
+@media screen and (max-width: 560px) {
+  body {
+    font-size: 16px;
+    /* Mengatur ukuran font dasar untuk lebih mudah dibaca di layar yang lebih kecil */
+  }
+
+  /* Header */
+  .header {
+    padding: 1rem 5%;
+  }
+
+  /* Logo */
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--bg-color);
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+
+  .bar {
+    width: 20px;
+  }
+
+  /* Home Section */
+  .home {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 5%;
+  }
+
+  .home-content {
+    text-align: center;
+  }
+
+  .home-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .home-content h1 {
+    font-size: 2.5rem;
+    margin-top: 4rem;
+  }
+
+  .home-img img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .social-media {
+    text-align: center;
+  }
+
+  .social-media a {
+    margin: 1rem;
+  }
+
+  /* About Section */
+  .about {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 5%;
+  }
+
+  .about-img img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .about-content h2 {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .about-content h3 {
+    font-size: 20px;
+  }
+
+  .about-content p {
+    font-size: 10px;
+  }
+
+  .services {
+    flex-direction: column;
+    padding: 2rem 5%;
+  }
+
+  /* Services Section */
+  .services-list {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(30vw, 1fr));
+    gap: 2rem;
+  }
+
+  .services-content h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .services-content h3 {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .services-content p {
+    text-align: center;
+    font-size: 10px;
+  }
+
+
+  /* Portfolio Section */
+  .portfolio {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 5%;
+  }
+
+  .portfolio-content h2 {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .portfolio-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .portfolio-list div h3 {
+    padding: 0.5rem;
+    font-size: 10px;
+  }
+
+  .portfolio-list div i {
+    padding: 0.1rem;
+    font-size: 10px;
+  }
+
+  /* Counter Section */
+  .trinity {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    /* Mengatur jarak antara elemen di dalam grid */
+  }
+
+  .counter {
+    font-size: 3rem;
+  }
+
+  #java-script {
+    grid-column: span 2;
+    text-align: center;
+  }
+
+  .trinity:last-child {
+    grid-column: span 2;
+    text-align: center;
+  }
+
+  /* Buttons */
+  .btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.4rem;
+  }
+
+
+  .dropdown {
+    display: flex;
+  }
+
   .dropbtn {
     background-color: transparent;
     color: white;
