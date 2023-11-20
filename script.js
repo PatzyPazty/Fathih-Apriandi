@@ -1,7 +1,7 @@
 const mengetik = new Typed(".typing", {
   strings: ["Frontend Developer", "Web Developer", "Graphic Designer"],
-  typeSpeed: 100,
-  backSpeed: 75,
+  typeSpeed: 125,
+  backSpeed: 100,
   loop: true,
 });
 
@@ -76,7 +76,7 @@ function startCountersAnimation() {
   counters.forEach(counter => {
     const targetCount = +counter.textContent;
     let count = 0;
-    const increment = targetCount / 1000;
+    const increment = targetCount / 200;
 
     function updateCount() {
       count += increment;
