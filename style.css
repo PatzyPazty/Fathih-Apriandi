@@ -302,7 +302,7 @@ a.active {
 }
 
 .portfolio-list div i {
-  margin-top: 0;
+  margin-top: 1px;
   margin-bottom: 1px;
   border: 2px solid var(--main-color);
   border-radius: 50%;
@@ -470,7 +470,7 @@ a.active {
   /* Services Section */
   .services-list {
     display: grid;
-    grid-template-columns: repeat(1, minmax(30vw, 1fr));
+    grid-template-columns: repeat(2, minmax(30vw, 1fr));
     gap: 2rem;
   }
 
@@ -532,10 +532,13 @@ a.active {
     font-size: 3rem;
   }
 
-  /* Mengatur BIRTH DAY untuk mengambil dua kolom */
+  #java-script {
+    grid-column: span 2;
+    text-align: center;
+  }
+
   .trinity:last-child {
     grid-column: span 2;
-    /* Mengatur BIRTH DAY untuk mengambil dua kolom */
     text-align: center;
   }
 
