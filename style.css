@@ -344,7 +344,7 @@ a.active {
   padding: 5px;
 }
 
-.portfolio-list .trinity .counter {
+.portfolio-list .trinity {
   color: var(--main-color);
   font-size: 30px;
   font-weight: 500;
@@ -352,6 +352,13 @@ a.active {
   margin-bottom: 1px;
   text-align: center;
   padding: 15px;
+}
+
+.counter {
+  font-weight: 1000;
+  font-size: 30px;
+  text-align: center;
+  padding: 5px;
 }
 
 .portfolio-list .trinity h3:hover {
@@ -463,7 +470,7 @@ a.active {
   /* Services Section */
   .services-list {
     display: grid;
-    grid-template-columns: repeat(1, minmax(30vw, 1fr));
+    grid-template-columns: repeat(2, minmax(30vw, 1fr));
     gap: 2rem;
   }
 
@@ -521,8 +528,8 @@ a.active {
     /* Mengatur jarak antara elemen di dalam grid */
   }
 
-  .trinity .counter {
-    font-size: 10px;
+  .counter {
+    font-size: 3rem;
   }
 
   /* Mengatur BIRTH DAY untuk mengambil dua kolom */
